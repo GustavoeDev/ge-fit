@@ -52,6 +52,7 @@ li > a{
     font-weight: 600;
     padding: 5px 20px;
     color: #8b8b8b;
+    width: 100%;
 }
 
 #link-active{
@@ -88,11 +89,12 @@ li > a:hover{
     cursor: pointer;
     border-radius: 3px;
     margin-bottom: 200px;
+    transition: all 0.5s;
 }
 
 .container-text button:hover{
     transform: translateY(-10px);
-    transition: all 1s;
+    transition: all 0.5s;
 }
 
 .container-text button > a{
@@ -131,7 +133,7 @@ main{
 
 .container-social #social-insta:hover, #social-tik:hover{
     transform: translateY(-10px);
-    transition: all 1s;
+    transition: all 0.5s;
 }
 
 .container-social a{
@@ -141,6 +143,7 @@ main{
     padding: 10px 25px;
     cursor: pointer;
     border-radius: 3px;
+    transition: all 0.5s;
 }
 
 .container-topics{
@@ -204,17 +207,194 @@ main{
     background-repeat: no-repeat;
 }
 
-.container-topics > a{
+.container-topics button{
     border: 1px solid var(--cor-principal);
-    color: var(--cor-principal);
-    font-weight: 600;
+    background: none;
     padding: 10px 25px;
     cursor: pointer;
     border-radius: 3px;
+    transition: all 0.5s;
 }
 
+.container-topics button:hover{
+    transform: translateY(-10px);
+    transition: all 0.5s;
+}
 
+.container-topics button > a{
+    color: var(--cor-principal);
+    font-family: var(--fonte-destaque);
+    font-size: 1rem;
+    font-weight: 600;
+}
 
+.container-sobre{
+    background-color: var(--cor-principal);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 70px 5px;
+}
 
+.container-sobre div{
+    max-width: 600px;
+}
 
+.container-sobre img{
+    max-width: 334px;
+    min-width: 210px;
+    width: 100%;
+    border-bottom: 8px solid #000000;
+}
 
+.container-sobre h3{
+    color: #ffffff;
+    font-family: var(--fonte-destaque);
+    font-weight: 600;
+    font-size: 1.7rem;
+}
+
+.container-sobre p{
+    color: #ffffff;
+    margin: 20px 0px 30px 0px;
+    text-align: justify;
+}
+
+.container-sobre button{
+    border: none;
+    background-color: #000000;
+    padding: 7px 25px;
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+
+.container-sobre button:hover{
+    transform: translateY(-10px);
+    transition: all 0.5s;
+}
+
+.container-sobre button > a{
+    color: #ffffff;
+    font-family: var(--fonte-destaque);
+    font-size: 1rem;
+}
+
+.container-estrutura{
+    padding: 100px 0px 90px 0px;
+    text-align: center;
+}
+
+.container-estrutura h2{
+    color: var(--cor-principal);
+    font-family: var(--fonte-destaque);
+    font-size: 2rem;
+}
+
+.container-estrutura p{
+    color: #ffffff;
+    margin: 10px 0px 30px 0px;
+}
+
+.container-estrutura-image{
+    margin-bottom: 60px;
+    background-image: url(../img/background-estrutura.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container-estrutura-image > div > div{
+    display: flex;
+}
+
+#container-estrutura-image-div{
+    margin: 5px 0px;
+}
+
+.container-estrutura-image > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.container-estrutura button{
+    border: 1px solid var(--cor-principal);
+    background: none;
+    padding: 10px 25px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+
+.container-estrutura button:hover{
+    transform: translateY(-10px);
+    transition: all 0.5s;
+}
+
+.container-estrutura a{
+    color: var(--cor-principal);
+    font-family: var(--fonte-destaque);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.container-contato{
+    background-image: url(../img/background-contato.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 70px 0px;
+    text-align: center;
+}
+
+.container-contato h2{
+    color: var(--cor-principal);
+    font-family: var(--fonte-destaque);
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.container-contato button{
+    border: 1px solid var(--cor-principal);
+    background: none;
+    padding: 10px 25px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: all 0.5s;
+    margin-top: 10px;
+}
+
+.container-contato button:hover{
+    transform: translateY(-10px);
+    transition: all 0.5s;
+}
+
+.container-contato a{
+    color: var(--cor-principal);
+    font-family: var(--fonte-destaque);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 60px;
+    background-color: var(--cor-principal);
+    align-items: center;
+    
+}
+
+footer > p{
+    font-family: var(--fonte-destaque);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+footer > span{
+    font-family: var(--fonte-destaque);
+    font-weight: 600;
+    font-size: 1.3rem;
+}
