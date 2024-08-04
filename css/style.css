@@ -41,6 +41,16 @@ header{
     margin-bottom: 200px;
 }
 
+.efeito-container-header, .efeito-container-text, .titulo, 
+.efeito-beneficios1, .efeito-beneficios2, .efeito-beneficios3,
+.efeito-sobre-img, .efeito-sobre-text, .efeito-paragrafo, 
+.efeito-botao, .efeito-estrutura1, .efeito-estrutura2,
+.efeito-estrutura3,.efeito-estrutura4,.efeito-estrutura5,
+.efeito-estrutura6,.efeito-estrutura7,.efeito-estrutura8,
+.efeito-estrutura9{
+    visibility: hidden;
+}
+
 nav > ul{
     display: flex;
 }

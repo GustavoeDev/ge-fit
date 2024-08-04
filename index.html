@@ -5,11 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GE Fit</title>
     <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/reveal.js" defer></script>
     <script src="js/script.js"></script>
+    
+    
 </head>
 <body>
     <header>
-        <div class="container-header">
+        <div class="container-header efeito-container-header">
             <img src="img/gefit-logo.svg" alt="">
             <nav class="nav-list">
                 <ul>
@@ -38,7 +43,7 @@
             </ul>
         </div>
 
-        <div class="container-text">
+        <div class="container-text efeito-container-text">
             <h1>GEFIT ACADEMIA</h1>
             <p>Sua evolução motiva a nossa!</p>
             <button><a href="#">Nossa Estrutura</a></button>
@@ -48,20 +53,20 @@
 
     <main>
         <section class="container-social">
-            <h2>Visite nosso Instagram e TikTok</h2>
+            <h2 class="titulo">Visite nosso Instagram e TikTok</h2>
             <div>
-                <a href="#" id="social-insta">Instagram</a>
-                <a href="#" id="social-tik">Tiktok</a>
+                <a class="efeito-botao" href="#" id="social-insta">Instagram</a>
+                <a class="efeito-botao" href="#" id="social-tik">Tiktok</a>
             </div>
         </section>
 
 
         <section class="container-topics">
-            <h2>Benefícios</h2>
-            <p>Fazer exercícios te trazem diversos benefícios, vamos ver alguns deles:</p>
+            <h2 class="titulo">Benefícios</h2>
+            <p class="efeito-paragrafo">Fazer exercícios te trazem diversos benefícios, vamos ver alguns deles:</p>
 
             <div>
-                <div id="topics-one">
+                <div class="efeito-beneficios1" id="topics-one">
                     <img src="img/dumbell.png" alt="Dumbell Image">
                     <h3>Resistência</h3>
                     <p>A prática de exercícios faz com que <br>
@@ -70,14 +75,14 @@
                     </p>
                 </div>
 
-                <div id="topics-two">
+                <div class="efeito-beneficios2" id="topics-two">
                     <img src="img/muscle.png" alt="Muscle Image">
                     <h3>Força</h3>
                     <p>Praticar musculação regurlamente te faz <br>
                     ganhar mais força e fortalecer partes <br>
                     importantes do corpo, como a coluna.</p>
                 </div>
-                <div id="topics-three">
+                <div class="efeito-beneficios3" id="topics-three">
                     <img src="img/exercise.png" alt="Exercise Image">
                     <h3>Postura</h3>
                     <p>Com a prática regular da atividade física <br>
@@ -85,13 +90,13 @@
                     postura deixarão de ser um incômodo.</p>
                 </div>
             </div>
-            <button><a href="#">Conheça nossas aulas</a></button>
+            <button class="efeito-botao"><a href="#">Conheça nossas aulas</a></button>
         </section>
 
         
         <section class="container-sobre">
-            <img src="img/sobrenos-1.png" alt="">
-            <div>
+            <img class="efeito-sobre-img" src="img/sobrenos-1.png" alt="">
+            <div class="efeito-sobre-text">
                 <h3>Sobre Nós</h3>
                 <p>A academia foi criada pensando em você, por isso 
                     oferecemos tudo que há de mais moderno em equipamentos 
@@ -106,35 +111,35 @@
 
         <section class="container-estrutura">
             <div>
-                <h2>Estrutura</h2>
-                <p>Conheça nossa estrutura feita para você!</p>
+                <h2 class="titulo">Estrutura</h2>
+                <p class="efeito-paragrafo">Conheça nossa estrutura feita para você!</p>
             </div>
 
             <div class="container-estrutura-image">
                 <div>
-                    <div><img src="img/estrutura-1.png" alt=""></div>
-                    <div><img src="img/estrutura-2.png" alt=""></div>
-                    <div><img src="img/estrutura-3.png" alt=""></div>
+                    <div class="efeito-estrutura1"><img src="img/estrutura-1.png" alt=""></div>
+                    <div class="efeito-estrutura2"><img src="img/estrutura-2.png" alt=""></div>
+                    <div class="efeito-estrutura3"><img src="img/estrutura-3.png" alt=""></div>
                 </div>
                 <div id="container-estrutura-image-div">
-                    <div><img src="img/estrutura-4.png" alt=""></div>
-                    <div><img src="img/estrutura-5.png" alt=""></div>
-                    <div><img src="img/estrutura-6.png" alt=""></div>
+                    <div class="efeito-estrutura4"><img src="img/estrutura-4.png" alt=""></div>
+                    <div class="efeito-estrutura5"><img src="img/estrutura-5.png" alt=""></div>
+                    <div class="efeito-estrutura6"><img src="img/estrutura-6.png" alt=""></div>
                 </div>
                 <div>
-                    <div><img src="img/estrutura-7.png" alt=""></div>
-                    <div><img src="img/estrutura-8.png" alt=""></div>
-                    <div><img src="img/estrutura-9.png" alt=""></div>
+                    <div class="efeito-estrutura7"><img src="img/estrutura-7.png" alt=""></div>
+                    <div class="efeito-estrutura8"><img src="img/estrutura-8.png" alt=""></div>
+                    <div class="efeito-estrutura9"><img src="img/estrutura-9.png" alt=""></div>
                 </div>
             </div>
 
-            <button><a href="#">Conhecer os Planos</a></button>
+            <button class="efeito-botao"><a href="#">Conhecer os Planos</a></button>
         </section>
 
 
         <section class="container-contato">
-            <h2>Comece a controlar o seu futuro</h2>
-            <button><a href="#">Entre em Contato</a></button>
+            <h2 class="titulo">Comece a controlar o seu futuro</h2>
+            <button class="efeito-botao"><a href="#">Entre em Contato</a></button>
         </section>
 
 
