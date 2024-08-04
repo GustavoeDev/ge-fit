@@ -66,6 +66,14 @@ li > a:hover{
     transition: all 0.3s;
 }
 
+.mobile-menu-icon{
+    display: none;
+}
+
+.mobile-menu{
+    display: none;
+}
+
 .container-text{
     text-align: center;
 }
@@ -242,7 +250,6 @@ main{
 
 .container-sobre img{
     max-width: 334px;
-    min-width: 210px;
     width: 100%;
     border-bottom: 8px solid #000000;
 }
@@ -397,4 +404,81 @@ footer > span{
     font-family: var(--fonte-destaque);
     font-weight: 600;
     font-size: 1.3rem;
+}
+
+@media screen and (max-width:950px) {
+    .nav-list > ul > li{
+        display: none;
+    }
+
+    .mobile-menu-icon{
+        display: block;
+    }
+
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu{
+        background-color: #000000;
+        margin-top: -200px;
+        padding: 20px 0px 20px 0px;
+        margin-left: -40px;
+        margin-right: -40px;
+    }
+    .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .mobile-menu > ul > li{
+        display: block;
+    }
+    
+    .mobile-menu > ul > li > a{
+        font-size: 1rem;
+        border: none;
+        color: #ffffff;
+    }
+
+    #mobile-menu-a{
+        color: var(--cor-principal);
+    }
+
+    .mobile-menu > ul > li > a:hover{
+        color: var(--cor-principal);
+    }
+
+    .open{
+        display: block;
+    }
+
+    .container-sobre{
+        flex-direction: column;
+    }
+
+    .container-sobre > div{
+        margin-top: 30px;
+        text-align: center;
+    }
+    
+    .container-sobre img{
+        margin-top: -30px;
+    }
+
+    .container-sobre p{
+        padding: 0px 20px;
+    }
+
+    footer p{
+        font-size: 0.6rem;
+    }
+
+    footer span{
+        font-size: 0.8rem;
+    }
 }

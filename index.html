@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GE Fit</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
 </head>
 <body>
     <header>
         <div class="container-header">
             <img src="img/gefit-logo.svg" alt="">
-            <nav>
+            <nav class="nav-list">
                 <ul>
                     <li><a href="#" id="link-active">Início</a></li>
                     <li><a href="#">Sobre Nós</a></li>
@@ -19,7 +20,22 @@
                     <li><a href="#">Aulas</a></li>
                     <li><a href="#">Contato</a></li>
                 </ul>
+                <div class="mobile-menu-icon">
+                    <button onclick="menuShow()"><img class="icon" src="img/menu_white_36dp.svg" alt=""></button>
+                </div>
             </nav>
+
+        </div>
+
+        <div class="mobile-menu">
+            <ul>
+                <li><a href="#" id="mobile-menu-a">Início</a></li>
+                <li><a href="#">Sobre Nós</a></li>
+                <li><a href="#">Planos</a></li>
+                <li><a href="#">Estrutura</a></li>
+                <li><a href="#">Aulas</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
         </div>
 
         <div class="container-text">
