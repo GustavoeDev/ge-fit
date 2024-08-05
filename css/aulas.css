@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --cor-principal: #e51e2a;
+
+    --fonte-destaque: 'Poppins', cursive;
+    --fonte-padrao: 'Nunito Sans', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 100%;
+    font-family: var(--fonte-padrao);
+    background-color: #000000;
+}
+
+header{
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px;
+    flex-direction: column;
+}
+
+.container-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+nav{
+    margin-right: 17px;
+}
+
+nav > ul{
+    display: flex;
+}
+
+li > a{
+    color: var(--cor-principal);
+    font-size: 1.1rem;
+    font-family: var(--fonte-destaque);
+    font-weight: 600;
+    padding: 5px 20px;
+    color: #8b8b8b;
+    width: 100%;
+}
+
+#link-active{
+    border-bottom: 1px solid var(--cor-principal);
+    color: var(--cor-principal);
+}
+
+li > a:hover{
+    border-bottom: 1px solid var(--cor-principal);
+    color: var(--cor-principal);
+    transition: all 0.3s;
+}
+
+.mobile-menu-icon{
+    display: none;
+}
+
+.mobile-menu{
+    display: none;
+}
+
+
+
+
+
+@media screen and (max-width:950px) {
+    .nav-list > ul > li{
+        display: none;
+    }
+
+    .mobile-menu-icon{
+        display: block;
+    }
+
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu{
+        background-color: #000000;
+        padding: 20px 0px 20px 0px;
+        margin-left: -40px;
+        margin-right: -40px;
+    }
+    .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .mobile-menu > ul > li{
+        display: block;
+    }
+    
+    .mobile-menu > ul > li > a{
+        font-size: 1rem;
+        border: none;
+        color: #ffffff;
+    }
+
+    #mobile-menu-a{
+        color: var(--cor-principal);
+    }
+
+    .mobile-menu > ul > li > a:hover{
+        color: var(--cor-principal);
+    }
+
+    .open{
+        display: block;
+    }
+
+}

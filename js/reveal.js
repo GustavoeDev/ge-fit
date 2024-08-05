@@ -1,155 +1,172 @@
-window.revelar = ScrollReveal({reset:true})
-
 // HEADER
 
-revelar.reveal('.efeito-container-header',
+ScrollReveal().reveal('.efeito-container-header',
     {
     duration: 2000, 
     distance: '90px',
-    origin: 'top'
+    origin: 'top',
+    once: true
     })
 
-revelar.reveal('.efeito-container-text',
+ScrollReveal().reveal('.efeito-container-text',
     {
     duration: 2000, 
-    distance: '90px'
+    distance: '90px',
+    once: true
     })
 
 // TITULOS
 
-revelar.reveal('.titulo',
+ScrollReveal().reveal('.titulo',
     {
         duration: 1000, 
         distance: '90px',
-        origin: 'top'
+        origin: 'top',
+        once: true
     })
 
 // BUTTONS
 
-revelar.reveal('.efeito-botao',
+ScrollReveal().reveal('.efeito-botao',
     {
         duration: 1000, 
         distance: '90px',
-        origin: 'bottom'
+        origin: 'bottom',
+        once: true
     })
 
 // PARAGRAFOS
 
-revelar.reveal('.efeito-paragrafo',
+ScrollReveal().reveal('.efeito-paragrafo',
     {
         duration: 1000, 
         distance: '90px',
-        origin: 'top'
+        origin: 'top',
+        once: true
     })
 
 // SESSÃO DE BENEFICIOS
 
-revelar.reveal('.efeito-beneficios1',
+ScrollReveal().reveal('.efeito-beneficios1',
     {
         duration: 1000, 
         distance: '90px',
-        delay: 500
+        delay: 500,
+        once: true
     })
 
-revelar.reveal('.efeito-beneficios2',
+ScrollReveal().reveal('.efeito-beneficios2',
     {
         duration: 1000, 
         distance: '90px',
-        delay: 700
+        delay: 700,
+        once: true
     })
 
-revelar.reveal('.efeito-beneficios3',
+ScrollReveal().reveal('.efeito-beneficios3',
     {
         duration: 1000, 
         distance: '90px',
-        delay: 900
+        delay: 900,
+        once: true
     })
 
 // SESSÃO SOBRE NÓS
 
-revelar.reveal('.efeito-sobre-img',
+ScrollReveal().reveal('.efeito-sobre-img',
     {
         duration: 1000, 
         distance: '90px',
-        origin: 'left'
+        origin: 'left',
+        once: true
     })
 
-revelar.reveal('.efeito-sobre-text',
+ScrollReveal().reveal('.efeito-sobre-text',
     {
         duration: 1000, 
         distance: '90px',
         origin: 'right',
         delay: 500,
-        scale: 0
+        scale: 0,
+        once: true
     })
 
 // SESSÃO DE ESTRUTURA
 
-revelar.reveal('.efeito-estrutura1',
-    {
-        duration: 1100, 
-        distance: '90px',
-        scale: 0
-    })
-
-revelar.reveal('.efeito-estrutura2',
-    {
-        duration: 1100, 
-        distance: '90px',
-        scale: 0
-    })
-
-revelar.reveal('.efeito-estrutura3',
-    {
-        duration: 1100, 
-        distance: '90px',
-        scale: 0
-    })
-
-revelar.reveal('.efeito-estrutura4',
+ScrollReveal().reveal('.efeito-estrutura1',
     {
         duration: 1100, 
         distance: '90px',
         scale: 0,
-        delay: 100
+        once: true
     })
 
-revelar.reveal('.efeito-estrutura5',
+ScrollReveal().reveal('.efeito-estrutura2',
     {
         duration: 1100, 
         distance: '90px',
         scale: 0,
-        delay: 100
+        once: true
     })
 
-revelar.reveal('.efeito-estrutura6',
+ScrollReveal().reveal('.efeito-estrutura3',
     {
         duration: 1100, 
         distance: '90px',
         scale: 0,
-        delay: 100
+        once: true
     })
 
-revelar.reveal('.efeito-estrutura7',
+ScrollReveal().reveal('.efeito-estrutura4',
     {
         duration: 1100, 
         distance: '90px',
         scale: 0,
-        delay: 150
+        delay: 100,
+        once: true
     })
 
-revelar.reveal('.efeito-estrutura8',
+ScrollReveal().reveal('.efeito-estrutura5',
     {
         duration: 1100, 
         distance: '90px',
         scale: 0,
-        delay: 150
+        delay: 100,
+        once: true
     })
 
-revelar.reveal('.efeito-estrutura9',
+ScrollReveal().reveal('.efeito-estrutura6',
     {
         duration: 1100, 
         distance: '90px',
         scale: 0,
-        delay: 150
+        delay: 100,
+        once: true
+    })
+
+ScrollReveal().reveal('.efeito-estrutura7',
+    {
+        duration: 1100, 
+        distance: '90px',
+        scale: 0,
+        delay: 150,
+        once: true
+    })
+
+ScrollReveal().reveal('.efeito-estrutura8',
+    {
+        duration: 1100, 
+        distance: '90px',
+        scale: 0,
+        delay: 150,
+        once: true
+    })
+
+ScrollReveal().reveal('.efeito-estrutura9',
+    {
+        duration: 1100, 
+        distance: '90px',
+        scale: 0,
+        delay: 150,
+        once: true
     })

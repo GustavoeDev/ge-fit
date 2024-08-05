@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --cor-principal: #e51e2a;
+
+    --fonte-destaque: 'Poppins', cursive;
+    --fonte-padrao: 'Nunito Sans', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 100%;
+    font-family: var(--fonte-padrao);
+    background-color: #000000;
+}
+
+header{
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px;
+    flex-direction: column;
+}
+
+.container-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav > ul{
+    display: flex;
+}
+
+li > a{
+    color: var(--cor-principal);
+    font-size: 1.1rem;
+    font-family: var(--fonte-destaque);
+    font-weight: 600;
+    padding: 5px 20px;
+    color: #8b8b8b;
+    width: 100%;
+}
+
+#link-active{
+    border-bottom: 1px solid var(--cor-principal);
+    color: var(--cor-principal);
+}
+
+li > a:hover{
+    border-bottom: 1px solid var(--cor-principal);
+    color: var(--cor-principal);
+    transition: all 0.3s;
+}
+
+.mobile-menu-icon{
+    display: none;
+}
+
+.mobile-menu{
+    display: none;
+}
+
+/* MAIN */
+
+main{
+    max-width: 1440px;
+    width: 100%;
+}
+
+.container-sobre{
+    background-image: linear-gradient(to bottom, var(--cor-principal), #e51e2bcb), url(../img/background-sobre2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    text-align: center;
+    padding: 80px 0px;
+}
+
+.container-sobre > h1{
+    color: #ffffff;
+    font-family: var(--fonte-destaque);
+    font-weight: 600;
+    font-size: 2.5rem;
+    text-shadow: 0px 0px 15px #000000;
+}
+
+.container-text{
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    padding: 100px 0px;
+}
+
+.container-text > img{
+    max-width: 529px;
+    width: 100%;
+}
+
+.container-sec{
+    max-width: 650px;
+    color: #ffffff;
+    font-family: var(--fonte-destaque);
+}
+
+.container-sec > h2{
+    color: var(--cor-principal);
+    font-size: 2.3rem;
+    margin-bottom: 10px;
+}
+
+.container-sec > p{
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+.container-sec > button{
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    background-color: var(--cor-principal);
+}
+
+.container-sec > button > a{
+    color: #000000;
+    font-weight: 600;
+    font-family: var(--fonte-destaque);
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 60px;
+    background-color: var(--cor-principal);
+    align-items: center;
+    
+}
+
+footer > p{
+    font-family: var(--fonte-destaque);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+footer > span{
+    font-family: var(--fonte-destaque);
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+@media screen and (max-width:950px) {
+    .nav-list > ul > li{
+        display: none;
+    }
+
+    .mobile-menu-icon{
+        display: block;
+    }
+
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu{
+        background-color: #000000;
+        margin-top: 70px;
+        width: 100%;
+        position: fixed;
+        z-index: 1000;
+        padding: 20px 0px 20px 0px;
+        margin-left: -40px;
+        margin-right: -40px;
+        
+    }
+
+    .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .mobile-menu > ul > li{
+        display: block;
+    }
+    
+    .mobile-menu > ul > li > a{
+        font-size: 1rem;
+        border: none;
+        color: #ffffff;
+    }
+
+    #mobile-menu-a{
+        color: var(--cor-principal);
+    }
+
+    .mobile-menu > ul > li > a:hover{
+        color: var(--cor-principal);
+    }
+
+    .open{
+        display: block;
+    }
+
+    .container-text > img{
+        padding: 20px;
+    }
+
+    .container-sec{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-sec > p{
+        padding: 20px;
+    }
+
+    footer{
+        padding: 10px 20px;
+    }
+
+    footer p{
+        font-size: 0.5rem;
+        
+    }
+
+    footer span{
+        font-size: 0.7rem;
+    }
+
+}
